@@ -14,6 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+"""
+                        CS 451R                    
+                Group 13 Scheduling project 
+                        Team members:               
+                      Anisha Ghimire (Project Manager)
+                    Daniel Oliveros Guerra      
+                    Nawaf Al-Mashrafi           
+                     Stanley Janesko             
+"""
 
 from django.contrib import admin
 from django.urls import path
