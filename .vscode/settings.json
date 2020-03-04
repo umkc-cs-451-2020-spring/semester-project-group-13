@@ -1,4 +1,8 @@
 {
     "git.ignoreLimitWarning": true,
+<<<<<<< HEAD
     "python.pythonPath": "c:\\Users\\stanley\\Documents\\Programming Projects\\Python Projects\\semester-project-group-13\\scheduling-project-env\\Scripts\\python.exe"
+=======
+    "python.pythonPath": "scheduling-app-env\\Scripts\\python.exe"
+>>>>>>> init project
 }
