@@ -1,6 +1,10 @@
 # Created by https://www.gitignore.io/api/code,pycharm
 # Edit at https://www.gitignore.io/?templates=code,pycharm
 
+# Python Environments
+venv/
+scheduling-app-env/
+
 ### Code ###
 .vscode/*
 !.vscode/settings.json
