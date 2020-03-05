@@ -1,0 +1,4 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "scheduling-app-env\\Scripts\\python.exe"
+}

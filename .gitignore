@@ -3,7 +3,7 @@
 
 # Python Environments
 venv/
-scheduling-app-env/
+scheduling-project-env/
 
 ### Code ###
 .vscode/*
