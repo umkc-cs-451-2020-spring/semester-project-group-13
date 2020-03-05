@@ -1,4 +1,4 @@
- 
+
 body {
   background: #fafafa;
   color: #333333;
@@ -51,7 +51,8 @@ ul {
 .account-heading {
   font-size: 2.5rem;
 }
+  
+.navbar ul li:hover a {
+  color: white;
+}
 
-.btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%)}
-
-.btn-grad:hover { background-position: right center; }

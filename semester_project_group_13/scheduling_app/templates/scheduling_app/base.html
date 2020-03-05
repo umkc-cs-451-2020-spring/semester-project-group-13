@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -25,7 +27,11 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-gradient fixed-top">
             <div class="container">
-                <a class="navbar-brand mr-4" href="/">Scheduling App</a>
+                <a class="navbar-brand" href="{% url 'schedule-home' %}">
+                    <img src="{% static "scheduling_app/schedule.svg" %}" width="30" height="30"
+                        class="d-inline-block align-top" alt="">
+                    Scheduling App
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,7 +40,7 @@
                     <div class="navbar-nav mr-auto">
                         <a class="nav-item nav-link" href="{% url 'schedule-home' %}">Home</a>
                         <a class="nav-item nav-link" href="{% url 'schedule-generate' %}">Generate</a>
-                        <a class="nav-item nav-link" href="{% url 'schedule-database' %}">Database</a>   
+                        <a class="nav-item nav-link" href="{% url 'schedule-database' %}">Database</a>
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
