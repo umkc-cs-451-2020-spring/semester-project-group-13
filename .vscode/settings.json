@@ -2,6 +2,7 @@
     "git.ignoreLimitWarning": true,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "python.pythonPath": "c:\\Users\\stanley\\Documents\\Programming Projects\\Python Projects\\semester-project-group-13\\scheduling-project-env\\Scripts\\python.exe"
 =======
     "python.pythonPath": "scheduling-app-env\\Scripts\\python.exe"
@@ -9,4 +10,7 @@
 =======
     "python.pythonPath": "scheduling-project-env\\Scripts\\python.exe"
 >>>>>>> Added scheule svg
+=======
+    "python.pythonPath": "scheduling-project-env\\Scripts\\python.exe"
+>>>>>>> c6fbc21428d2cf1c638b8920e48334ecf4dcb1cd
 }

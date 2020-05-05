@@ -12,7 +12,7 @@ scheduling-project-env/
 =======
 # Python Environments
 venv/
-scheduling-app-env/
+scheduling-project-env/
 
 >>>>>>> Added requirements text and .gitignore
 ### Code ###
