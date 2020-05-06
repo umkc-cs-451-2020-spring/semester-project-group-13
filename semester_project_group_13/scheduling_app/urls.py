@@ -14,6 +14,5 @@ urlpatterns = [
      path('course/new/', CourseCreateView.as_view(), name="course-create"),
      path('course/<int:pk>/update/', CourseUpdateView.as_view(), name="course-update"),
      path('course/<int:pk>/delete/', CourseDeleteView.as_view(), name="course-delete"),
-     path('generate/', views.generate, name="schedule-generate"),
-     path('generated_schedule/', views.database, name="generated_schedule")
+     path('generate/', views.generate, name="schedule-generate")
 ]
