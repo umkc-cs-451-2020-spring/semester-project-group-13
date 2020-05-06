@@ -1,11 +1,15 @@
 {% extends "scheduling_app/base.html" %}
 {% block content %}
-<h1>Generate</h1>
+<link href="../../static/scheduling_app/generate.css" rel="stylesheet">
+
+<h2>WARNING: MAKE SURE CONSTRAINTS ARE UP-TO-DATE BEFORE GENERATING SCHEDULE.</h2>
+
+<h3> Click the button below to generate a schedule based on current database constraints.</h3>
+
+
 
 <div class = "generate.button"/>
-
 <a class="btn btn-primary" role="button">Generate</a>
-
 </div>
 
 {% endblock content %}
