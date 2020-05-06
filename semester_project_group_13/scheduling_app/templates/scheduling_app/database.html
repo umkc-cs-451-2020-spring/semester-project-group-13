@@ -1,4 +1,109 @@
 {% extends "scheduling_app/base.html" %}
 {% block content %}
-<h1>Database</h1>
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-lg btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        Professors
+                    </button>
+                </h5>
+            </div>
+            
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                <div class="card-body">
+                    <div class = "input-group">
+                        <input id="search-course-input" class="form-control" type="text">  
+                        <a href="{% url 'professor-create' %}" class="btn btn-primary" role="button">Create</a>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Professor Type</th>
+                            <th>School</th>                            
+                        </tr>
+                        {% for professor in professors %}
+                        <tr>
+                            <td>{{ professor.first_name }}</td>
+                            <td>{{ professor.last_name }}</td>
+                            <td>{{ professor.email }}</td>
+                            <td>{{ professor.professor_type }}</td>
+                            <td>{{ professor.school }}</td>
+                            <td> <a href="{% url 'professor-update' professor.professor_id %}" class="button" class="btn btn-success">Edit</button> </td>
+                            <td> <a href="{% url 'professor-delete' professor.professor_id %}" class="button" class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-lg btn-block" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        Rooms
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                <div class="card-body">
+                    <div class = "input-group">
+                        <input id="search-course-input" class="form-control" type="text"> 
+                        <a href="{% url 'room-create' %}" class="btn btn-primary" role="button">Create</a>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Building</th>
+                            <th>Room Number</th>
+                        </tr>
+                        {% for room in rooms %}
+                        <tr>
+                            <td>{{ room.building }}</td>
+                            <td>{{ room.room_number }}</td>
+                            <td> <a href="{% url 'room-update' room.id %}" class="button" class="btn btn-success">Edit</button> </td>
+                            <td> <a href="{% url 'room-delete' room.id %}" class="button" class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-lg btn-block" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        Classes
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body">
+                    <div class = "input-group">
+                        <input id="search-course-input" class="form-control" type="text">  
+                        <a href="{% url 'course-create' %}" class="btn btn-primary" role="button">Create</a>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Section</th>
+                            <th>School</th>
+                        </tr>
+                        {% for course in courses %}
+                        <tr>
+                            <td>{{ course.course_name }}</td>
+                            <td>{{ course.section }}</td>
+                            <td>{{ course.school }}</td>
+                            <td> <a href="{% url 'course-update' course.id %}" class="button" class="btn btn-success">Edit</button> </td>
+                            <td> <a href="{% url 'course-delete' course.id %}" class="button" class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+
 {% endblock content %}
