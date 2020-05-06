@@ -1,8 +1,6 @@
+
 body{
-
-    color: white;
-
-
+    color: black;
 }
 
 h2{
@@ -10,7 +8,24 @@ h2{
 }
 
 .generate\.button{
-
+    color: white;
     text-align: center;
 
+}
+
+table {
+  border-spacing: 5px;
+}
+
+th {
+  text-align: left;
+    color: black;
+}
+th, td {
+    color: black;
+  padding: 15px;
+}
+
+table, th, td {
+  border: 1px solid black;
 }

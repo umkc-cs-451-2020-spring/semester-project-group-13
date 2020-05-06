@@ -1,18 +1,39 @@
 {% extends "scheduling_app/base.html" %}
 {% block content %}
 
+<link href="../../static/scheduling_app/generate.css" rel="stylesheet">
 
 <h2>POSSIBLE OPTIMAL SCHEDULE</h2>
 
 <h4>Please note: This schedule does not take into consideration external arbitrary constraints (i.e. professors availability suddenly changing.)</h4>
 
-  <table class="table">
+  <table class="generated.table">
       <tr>
           <th>First Name</th>
           <th>Last Name</th>
           <th>Email</th>
-          <th>Professor Type</th>
+          <th>Course Name</th>
+          <th>Building</th>
+          <th>Room Number</th>
           <th>School</th>
+      </tr>
+      <tr>
+          <td>Fred</td>
+          <td>Flintstone</td>
+          <td>flintstone@gmail.com</td>
+          <td>Intro to CS</td>
+          <td>Flarsheim Hall</td>
+          <td>123</td>
+          <td>School of Computing & Engineering</td>
+      </tr>
+            <tr>
+          <td>Homer</td>
+          <td>SIMPson</td>
+          <td>donut@umkc.edu</td>
+          <td>Software Engineering Capstone</td>
+          <td>Royal Hall</td>
+          <td>456</td>
+          <td>School of Computing & Engineering</td>
       </tr>
   </table>
 
