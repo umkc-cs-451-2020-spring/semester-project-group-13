@@ -3,6 +3,7 @@ from django.db import models
 from django_enumfield import enum
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy
+from django.urls import reverse
 
 class ProfessorType(enum.Enum):
     NON_TENURED = 1
@@ -60,6 +61,7 @@ class Professor(models.Model):
     def __str__(self):
         return self.first_name + " " + self.last_name
     
+
 class Constraint(models.Model):
     id = models.AutoField(primary_key=True)
     professor = models.ForeignKey(Professor, on_delete=models.CASCADE)

@@ -1,10 +1,20 @@
 # Created by https://www.gitignore.io/api/code,pycharm
 # Edit at https://www.gitignore.io/?templates=code,pycharm
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 # Python Environments
 venv/
 scheduling-project-env/
 
+=======
+>>>>>>> init project
+=======
+# Python Environments
+venv/
+scheduling-project-env/
+
+>>>>>>> Added requirements text and .gitignore
 ### Code ###
 .vscode/*
 !.vscode/settings.json
