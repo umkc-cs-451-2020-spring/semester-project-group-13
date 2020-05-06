@@ -60,3 +60,7 @@ class CourseDeleteView(DeleteView):
 
 def generate(request):  
     return render(request, "scheduling_app/generate.html")
+
+
+def generated_schedule(request):
+    return render(request,"scheduling_app/generated_schedule.html")

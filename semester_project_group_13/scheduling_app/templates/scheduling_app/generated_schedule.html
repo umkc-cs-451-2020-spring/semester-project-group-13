@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Generated Schedule</title>
-</head>
-<body>
+{% extends "scheduling_app/base.html" %}
+{% block content %}
 
-<h1>Mission success.</h1>
 
-</body>
-</html>
+<h2>POSSIBLE OPTIMAL SCHEDULE</h2>
+
+<h4>Please note: This schedule does not take into consideration external arbitrary constraints (i.e. professors availability suddenly changing.)</h4>
+
+  <table class="table">
+      <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Professor Type</th>
+          <th>School</th>
+      </tr>
+  </table>
+
+
+{% endblock content %}
